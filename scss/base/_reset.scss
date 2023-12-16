@@ -1,0 +1,25 @@
+/*Reset universal*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box; /* con esta propiedad mi caja mantiene el ancho y alto que fije y que el padding y el border no se vayan del tamano dado a la caja*/
+}
+
+a{
+    text-decoration:none;
+}
+
+/*Estilos generales*/
+
+html{
+    font-size:20px;
+}
+body{
+    background-color:#faf0ca;
+    font-family:'akkurat', Times, serif ;
+    list-style: none;
+    text-decoration: none;
+}

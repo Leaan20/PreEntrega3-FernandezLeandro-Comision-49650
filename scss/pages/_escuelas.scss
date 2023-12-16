@@ -1,0 +1,113 @@
+/*-------------------------EQUIPO-----------------------*/
+
+/*Estilo de la pagina equipo*/
+
+/* Estilos de imagenes y textos seccion board */
+
+.schools {
+    margin: 1em;
+    h2{
+        margin:0.5em;
+    }
+
+    p{
+        margin:0.5em;
+    }
+
+    .surf-school {
+        @include flex (column,center,center);
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+
+        .school-container {
+            display:flex;
+            flex-flow:row nowrap;
+            margin:0;
+          
+
+            .school-parag{
+                font-size: 1em;
+                text-align: justify;
+                display: flex;
+                flex-direction: column;
+                width:35%;
+                margin:1rem;
+                justify-content: center;
+            }
+
+            .gallery{
+                display:grid;
+                grid-template-areas:
+                "img1 img2"
+                "img1 img3"
+                ;
+                grid-template-columns:repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+                width:100vh;
+                justify-items: center;
+                justify-content: center;
+                gap:0.5em;
+                margin:5px;
+
+                .img-school1 {
+                    @include img-grid;
+                    // width:15rem;
+                    // height:15rem;
+                    grid-area: img1;
+                    object-fit: cover;
+                    align-self:center;
+                    justify-self:center;
+                    // transition-duration: 0.5s;
+                }
+
+                .img-school2 {
+                    @include img-grid;
+                    // width:15rem;
+                    // height:15rem;
+                    grid-area:img2;
+                    object-fit: cover;
+                    // transition-duration: 0.5s;
+                }
+
+                .img-school3 {
+                    @include img-grid;
+                    // width:15rem;
+                    // height:15rem;
+                    grid-area:img3;
+                    object-fit: cover;
+                    // transition-duration: 0.5s;
+
+                }
+
+                .expand:hover{
+                        transform: scale(1.05,1.05);
+                        // width:17rem;
+                        // height:17rem;
+                        box-shadow: 10px 6px 35px -4px rgba(169,194,16,0.75);
+                        transition-duration: 0.5s;
+                        padding:0;
+                        margin:0;
+                    }
+            }
+
+
+
+
+        }
+    }
+}
+
+.borja-channel{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:0.9em;
+
+    .borja-video{
+        width:560px;
+        height:315px;
+    }
+
+
+}

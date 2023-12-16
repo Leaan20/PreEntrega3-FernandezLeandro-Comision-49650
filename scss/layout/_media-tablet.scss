@@ -1,0 +1,254 @@
+/* tamaño de 1024px de ancho */
+
+/*------------- Desktop hacia tablet--------------- */
+
+@media screen and (max-width: 1024px){
+
+
+
+/* Navbar */
+header {
+
+    .navbar-o{
+        display:none;
+    }
+
+    .bootnav{
+        display:flex;
+        width: 100%;
+        background-color:nth($list: $general-colors, $n:1 );
+        color:nth($list: $general-colors, $n: 2);
+        font-family: 'Times New Roman', Times, serif;
+        font-size:1.2em;
+
+        .navbar{
+            .container-fluid{
+                .navbar-brand{
+                    .logo{
+                        width: 3.5rem;
+                        height: 3.8rem;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        #menu{
+            ul{
+                li{
+                    a{
+                        padding:3px;
+                        color:nth($list: $general-colors, $n: 2);
+                        transition:0.5s;
+
+                        &:hover{
+                            background-color:nth($list: $general-colors, $n: 2);
+                            color:nth($list: $general-colors, $n:1 );
+                            border-radius: 25px;
+                            padding:3px;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Footer */
+.footer{
+    .find{
+        iframe{
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+/* Index */
+
+.intro{
+    div{
+        width:90%;
+        .text-intro{
+            width:100%;
+            text-align:center;
+        }
+
+    }
+}
+
+.history{
+    div{
+        width:90%;
+        .text-history{
+            width:100%;
+            text-align:center;
+        }
+
+    }
+}
+
+
+
+/* Escuelas */
+    .schools{
+
+        .surf-school{
+
+            .school-container{
+                @include flex(column,center,center);
+                // display: flex;
+                // flex-direction:column;
+                // justify-content: center;
+                // align-items: center;
+
+                .school-parag{
+                    display:block;
+                    width: 80%;
+                }
+
+                .gallery{
+                    display:grid;
+                    grid-template-areas:
+                    "img1 img2"
+                    "img3 img3";
+                    grid-template-columns:repeat(2,1fr);
+                    grid-template-rows: repeat(2,auto);
+                    width:100vw;
+                    justify-items: center;
+                    justify-content: center;
+                    gap:0.3em;
+                    margin:0px;
+                }
+            }
+        }
+    }
+
+
+    /* Playas */
+
+    .beach{
+
+        .beach-container{
+
+            .beach-card{
+                    p{
+                        font-size:11px;
+                    }
+            }
+        }
+    }
+
+    /* Equipo */
+
+    .board{
+        h2{
+            margin:20px;
+        }
+    
+    
+        .sboard{
+
+            flex-direction:column;
+
+            div{
+
+                div{
+
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+    
+                div {
+                    overflow-x: hidden;
+                .surfboard{
+                    width: 15rem;
+                    height:17rem;
+                    margin:0px;
+                    }
+                }
+    
+            & :nth-child(odd) {
+                @include flex(column,center,center);
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+                }
+
+            & :nth-child(even) {
+                @include flex(column,center,center);
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: center;
+                // align-items: center;
+                }
+        }
+
+        }
+    
+
+    .neoprene {
+
+        
+        p{
+            font-size:16px;
+        }
+
+        h4{
+            font-size: 20px;
+        }
+
+    }
+
+        .accesories{
+            @include flex(column,center,center);
+            // display:flex;
+            // flex-direction:column;
+            // justify-content: center;
+            // align-items: center;
+
+            h2{
+                margin:20px;
+            }
+
+            p{
+                font-size: 16px;
+            }
+        
+            .accesories-container{
+        
+                width:80%;
+                @include flex(column,center,center);
+                // flex-direction:column;
+                // justify-content: center;
+                // align-items: center;
+        
+                .accesories-card{
+                    width:20rem;
+                    overflow: hidden;
+                    display: inline-block;
+                    text-align: center;
+                    margin:1em;
+
+        
+                    img{
+                        width:100%;
+                        height:15rem;
+                        padding:2px;
+                        margin-top:2px;
+                        margin-bottom:2px;
+                    }
+                }
+            }
+        }
+
+
+} //fin responsive
+
+
+/* --------------------------------------------- */

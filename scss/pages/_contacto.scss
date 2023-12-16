@@ -1,0 +1,39 @@
+/*---------------------CONTACTO------------------------*/
+
+/*Estilo de la pagina contacto*/
+
+.form{
+    @include flex(row,center,center);
+    // display:flex;
+    // justify-content: center;
+    // text-align: center;
+
+    .form-container{
+
+        border: 4px groove #c34;
+        border-radius: 25px;
+        width:20rem;
+        @include flex(column,center,center);
+        text-align: center;
+        padding:3px;
+        margin:7px;
+
+        label{
+            display: block;
+        }
+
+        textarea{
+            display:block;
+            text-align: center;
+            width:15rem;
+            margin-left:12%;
+            margin-bottom:7px;
+        }
+
+        .btn-form{
+            border-radius:15px;
+            padding:3px;
+        }
+
+    }
+}

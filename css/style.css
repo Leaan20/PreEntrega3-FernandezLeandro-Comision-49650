@@ -512,6 +512,9 @@ h1 {
   padding: 3px;
   margin: 7px;
 }
+.form .form-container p {
+  font-size: 18px;
+}
 .form .form-container label {
   display: block;
 }
@@ -700,6 +703,12 @@ h1 {
     margin-top: 2px;
     margin-bottom: 2px;
   }
+  /* Contacto */
+  .form .form-container textarea {
+    width: 12rem;
+    height: 8rem;
+    margin-left: 65px;
+  }
 }
 /* --------------------------------------------- */
 /* tamaño de 768pxde ancho */
@@ -794,7 +803,7 @@ h1 {
   }
   .accesories .accesories-container .accesories-card .p-container p {
     margin: 2px;
-    font-size: 0.7em;
+    font-size: 16px;
   }
   /* Escuelas */
   .schools {
@@ -852,7 +861,7 @@ h1 {
   .form .form-container textarea {
     width: 12rem;
     height: 8rem;
-    margin-left: 25px;
+    margin-left: 30px;
   }
 }
 /* ----------------------------------------------- */

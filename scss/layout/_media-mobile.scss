@@ -105,7 +105,16 @@ header {
 
             .beach-card{
                 width: 15rem;
-                height: 20rem;
+                height: 20.1rem;
+                div{
+                    h3{
+                        font-size:15px;
+                    }
+                    p{
+                        font: size 13px;
+                    }
+                }
+
             }
         }
     }
@@ -171,6 +180,7 @@ header {
     
         p{
             margin:0.5em;
+            font-size:14px;
         }
     
         .surf-school {
@@ -181,7 +191,7 @@ header {
                 overflow: hidden;
     
                 .school-parag{
-                    font-size:0.8em;
+                    font-size:14px;
                 }
     
                 .gallery{

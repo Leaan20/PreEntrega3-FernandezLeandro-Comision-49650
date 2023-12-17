@@ -30,6 +30,10 @@ header {
                         padding: 0;
                     }
                 }
+
+                .navbar-toggler{
+                    background-color:nth($list: $general-colors, $n:2 );
+                }
             }
         }
 
@@ -134,18 +138,36 @@ header {
         .beach-container{
 
             .beach-card{
-                    p{
-                        font-size:11px;
+                width: 15rem;
+                height: 20.1rem;
+
+                div{
+                    h3{
+                        font-size:16px;
                     }
+                    p{
+                        font-size: 13px;
+                    }
+                }
             }
         }
     }
 
     /* Equipo */
+    .prev-equip{
+        p{
+            font-size:14px;
+            margin:5px;
+        }
+    }
 
     .board{
         h2{
-            margin:20px;
+            margin:14px;
+        }
+        p{
+            font-size:14px;
+            margin:5px;
         }
     
     
@@ -194,13 +216,21 @@ header {
 
     .neoprene {
 
+        h2{
+            text-align:center;
+        }
         
         p{
             font-size:16px;
+            text-align:center;
+        }
+        h3{
+            text-align:center;
         }
 
         h4{
             font-size: 20px;
+            text-align:center;
         }
 
     }
